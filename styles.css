@@ -30,10 +30,12 @@ h2 {
 
 h3 {
   margin: 0;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 16px;
+	font-weight: 600;
 	line-height: 1.7;
 	color: #4a4a4a;
+  letter-spacing: .5px;
+  text-align: center;
 }
 
 p {
@@ -95,49 +97,6 @@ html, button, input, select, textarea,
     color: #AECFE5;
 }
 
-@media (min-width: 48em) {
-
-    /* We increase the body font size */
-    body {
-        font-size: 16px;
-    }
-    /* We want to give the content area some more padding */
-    .content {
-        padding: 1em;
-    }
-
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
-    .home-menu {
-        text-align: left;
-    }
-        .home-menu ul {
-            float: right;
-        }
-
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
-    /* We decrease the width of the .splash, since we have more width
-    to work with */
-    .splash {
-        width: 50%;
-        height: 50%;
-    }
-
-    .splash-head {
-        font-size: 250%;
-    }
-
-
-    /* We remove the border-separator assigned to .l-box-lrg */
-    .l-box-lrg {
-        border: none;
-    }
-
-}
 
 /* *******BODY******* */
 
@@ -251,8 +210,15 @@ input[type=text]:focus {
   margin-top: 50px;
 }
 
-.spacing2 {
-  margin-top: 30px;
+.singleSpacing {
+  margin-top: 0px;
+}
+
+.vs {
+  content:url("assets/images/vs.svg");
+  display: block;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .blue {
@@ -268,7 +234,7 @@ input[type=text]:focus {
   display: block; 
   margin: 0 auto; 
   margin-bottom: 0; 
-  margin-top: 0px;
+  margin-top: 40px;
 }
 
 .backgroundFooter {
@@ -307,7 +273,7 @@ input[type=text]:focus {
 
 
 /* Small screens */
-@media screen and (max-width: 650px)	{
+@media screen and (max-width: 768px)	{
 
   h1 {
     font-family: 'Raleway', sans-serif;
@@ -418,16 +384,69 @@ input[type=text]:focus {
       margin-top: 20px;
     }
 
-    .spacing1 {
-      margin-top: 20px;
+    .singleSpacing {
+      margin-top: 60px;
+    }
+
+    .vs {
+      content:url("assets/images/vs_mobile.svg");
+      display: block;
+      margin: 0 auto;
+      width: 100%;
     }
 
     .dank {
       content:url("assets/images/see_who_mobile.png");
-      width:90%; 
+      width:90%;
+      max-width: 360px; 
       display: block; 
       margin: 0 auto; 
-      margin-top: 0px;
+      margin-top: 40px;
     }
   
 }
+
+@media (min-width: 48em) {
+
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+    /* We want to give the content area some more padding */
+    .content {
+        padding: 1em;
+    }
+
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    /* We increase the height of the splash-container */
+/*    .splash-container {
+        height: 500px;
+    }*/
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
+
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
