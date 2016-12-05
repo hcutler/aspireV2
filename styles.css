@@ -143,6 +143,7 @@ html, button, input, select, textarea,
 
 .hero {
   background-position: 50% 50%;
+  background-image: url('assets/images/background.svg');
   background-repeat: no-repeat;
   background-size: contain;
   backface-visibility: hidden;
@@ -209,8 +210,7 @@ input[type=text]:focus {
   padding:15px 76px;
   text-decoration:none;
   width: 445px;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
   margin-top: 25px;
 }
 .myButton:hover {
@@ -338,6 +338,22 @@ input[type=text]:focus {
     line-height: 25px;
   }
 
+  .hero {
+    background-position: 50% 50%;
+    background-image: url('assets/images/background_mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    backface-visibility: hidden;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .header {
     width: 90%;
     display:block;
@@ -387,8 +403,7 @@ input[type=text]:focus {
     padding:15px 76px;
     text-decoration:none;
     width: 100%;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     margin-top: 25px;
     }
 
