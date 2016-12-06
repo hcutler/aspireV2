@@ -122,10 +122,17 @@ html, button, input, select, textarea,
   margin: 0 auto;
 }
 
+.centerForm {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 form{
-margin-left: 20%;
-margin-right:25%;
+margin-left: 0%;
 width: 100%;
+display: inline-block;
+margin: 0 auto;
 }
 
 input[type=text] {
