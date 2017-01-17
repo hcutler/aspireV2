@@ -427,6 +427,14 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   background-color:#325379;
 }
 
+.empty {
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
 /* Small screens */
 @media screen and (max-width: 768px)	{
 
@@ -584,6 +592,15 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
       display: block; 
       margin: 0 auto; 
       margin-top: 40px;
+    }
+
+    .empty {
+      text-align: center;
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 75px;
+      margin-bottom: 100px;
     }
   
 }
